@@ -1,0 +1,428 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tools {
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.editTools {
+    display: none;
+}
+
+.txtAreaEdit {
+    display: none;
+    width: 99.5%;
+    height: 91vh;
+}
+
+.txtArea {
+    width: 97%;
+    min-height: 83vh;
+    padding: 30px 20px;
+    font-size: 12px;
+    font-family: Arial;
+    background: #fff;
+    cursor: default;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.undlnd {
+    text-decoration: underline;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.colours,
+.background,
+.signin,
+.createTable {
+    width: 385px;
+    height: 170px;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    left: 30%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.colourOption,
+.bgColourOption {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.fade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.background,
+.signin {
+    height: 250px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0 20px 10px;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.colourTab,
+.imageTab,
+.fileTab {
+    width: 70px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.activeTab {
+    border-top: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #000;
+}
+
+.inactiveTab {
+    border-bottom: 1px solid #d3d3d3;
+    color: gray;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.inactiveTab:hover {
+    border-top: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.bgColour,
+.bgImage,
+.file {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bgImageOption {
+    width: 120px;
+    height: 50px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.inputField {
+    width: 240px;
+    height: 35px;
+    border: 1px solid #aaaaaa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    background: #f2f2f291;
+    cursor: pointer;
+}
+
+.file {
+    position: relative;
+}
+
+.input {
+    position: absolute;
+    height: 35px !important;
+    width: 350px;
+    left: 0;
+    opacity: 0;
+}
+
+.button {
+    width: 90px;
+    height: 35px;
+    border: 1px solid #aaaaaa;
+    border-left: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+.signinHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.login,
+.pass,
+.loginButton {
+    width: 95%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #aaaaaa;
+}
+
+.loginButton {
+    width: 97%;
+    height: 35px;
+    background: gray;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login,
+.pass {
+    padding-left: 10px;
+}
+
+.createTable {
+    width: 715px;
+    height: 320px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+.half {
+    width: 340px;
+    height: 100%;
+    padding: 0 4px;
+}
+
+.parameterName {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+.paramNameLine {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.valuesLine {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionsLine {
+    width: 100%;
+    height: 50px;
+    margin: 25px auto;
+}
+
+.inputBig,
+.buttonBig {
+    width: 330px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 1px solid #aaaaaa;
+}
+
+.inputSmall {
+    width: 185px;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #aaaaaa;
+}
+
+.inputSmaller {
+    height: 30px;
+    width: 120px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 1px solid #aaaaaa;
+}
+
+.resetTable,
+.createTableBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.resetTable,
+.resetlistOl,
+.resetlistUl {
+    background-color: red;
+}
+
+.createTableBtn,
+.createListOl,
+.createListUl {
+    background-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+table,
+ul,
+ol {
+    display: inline-block;
+}
+
+.newlist {
+    width: 335px;
+    height: 200px;
+    border-radius: 3px;
+    background: #fff;
+    position: absolute;
+    z-index: 100;
+    left: 35%;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.listInp {
+    margin-top: -20px;
+}
+
+.buttonOl {
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border: none;
+}
+
+.listButtons {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonBackground {
+    width: 27px;
+    height: 25px;
+    background: #fff;
+    padding-left: 8px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.roundedLeft {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.roundedRight {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.block {
+    margin-right: -5px;
+}
+
+#edit,
+#signinField {
+    border-radius: 3px;
+}
+
+.arrow {
+    padding-left: 0;
+    width: 20px;
+    position: relative;
+}
+
+.fontList {
+    margin-right: -15px;
+}
+
+.fSizeList {
+    margin-right: -10px;
+}
+
+.dropdownFont,
+.dropdownSize {
+    list-style-type: none;
+    display: none;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    position: absolute;
+    font-weight: normal;
+    padding: 5px 10px 5px 20px;
+    left: -23px;
+    top: 20px;
+}
+
+.dropdownFont {
+    width: 130px;
+}
+
+.dropdownSize {
+    width: 45px;
+}
+
+.fontOptions,
+.sizeOptions {
+    margin-bottom: 10px;
+}
+
+.displayBlock {
+    display: block;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> </head>
+
+<body>
+    <div class="fade"></div>
+    <div class="tools">
+        <div class="styleTools">
+            <div class="fas fa-code buttonBackground" id="edit"></div>
+            <div class="fas fa-bold bold buttonBackground roundedLeft block"></div>
+            <div class="fas fa-italic italic buttonBackground block"></div>
+            <div class="fas fa-underline undlnd buttonBackground block"></div>
+            <div class="fas fa-strikethrough crossed buttonBackground roundedRight"></div>
+            <div class="fas fa-align-left buttonBackground block roundedLeft" id="left"></div>
+            <div class="fas fa-align-center buttonBackground block" id="center"></div>
+            <div class="fas fa-align-right buttonBackground roundedRight" id="right"></div>
+            <div id="fontType" style="display: inline; cursor: pointer">
+                <div class="fas fa-font buttonBackground roundedLeft block fontList"></div>
+                <div class="fas fa-sort-down buttonBackground block arrow">
+                    <ul class="dropdownFont">
+                        <li style="font-family: Arial" class="fontOptions">Arial</li>
+                        <li style="font-family: Georgia" class="fontOptions">Georgia</li>
+                        <li style="font-family: Impact" class="fontOptions">Impact</li>
+                        <li style="font-family: Tahoma" class="fontOptions">Tahoma</li>
+                        <li style="font-family: Times New Roman" class="fontOptions">Times New Roman</li>
+                        <li style="font-family: Verdana" class="fontOptions">Verdana</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="fontSize" style="display: inline; cursor: pointer">
+                <div class="fas fa-text-height buttonBackground block fSizeList"></div>
+                <div class="fas fa-sort-down buttonBackground block arrow">
+                    <ul class="dropdownSize">
+                        <li class="sizeOptions">12px</li>
+                        <li class="sizeOptions">14px</li>
+                        <li class="sizeOptions">16px</li>
+                        <li class="sizeOptions">18px</li>
+                        <li class="sizeOptions">20px</li>
+                        <li class="sizeOptions">22px</li>
+                        <li class="sizeOptions">24px</li>
+                        <li class="sizeOptions">26px</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fas fa-palette buttonBackground  block" id="txtColour"></div>
+            <div class="colours">
+                <div class="colourOption" style="background: #C0392B"></div>
+                <div class="colourOption" style="background: #E74C3C"></div>
+                <div class="colourOption" style="background: #9B59B6"></div>
+                <div class="colourOption" style="background: #8E44AD"></div>
+                <div class="colourOption" style="background: #2980B9"></div>
+                <div class="colourOption" style="background: #3498DB"></div>
+                <div class="colourOption" style="background: #1ABC9C"></div>
+                <div class="colourOption" style="background: #16A085"></div>
+                <div class="colourOption" style="background: #27AE60"></div>
+                <div class="colourOption" style="background: #2ECC71"></div>
+                <div class="colourOption" style="background: #F1C40F"></div>
+                <div class="colourOption" style="background: #F39C12"></div>
+                <div class="colourOption" style="background: #E67E22"></div>
+                <div class="colourOption" style="background: #D35400"></div>
+                <div class="colourOption" style="background: #ECF0F1"></div>
+                <div class="colourOption" style="background: #BDC3C7"></div>
+                <div class="colourOption" style="background: #95A5A6"></div>
+                <div class="colourOption" style="background: #7F8C8D"></div>
+                <div class="colourOption" style="background: #34495E"></div>
+                <div class="colourOption" style="background: #2C3E50"></div>
+                <div class="colourOption" style="background: #000"></div>
+            </div>
+            <div class="fas fa-image buttonBackground roundedRight" id="bgPicture"></div>
+            <div class="background">
+                <div class="tabs">
+                    <div class="colourTab activeTab">Colour</div>
+                    <div class="imageTab inactiveTab">Image</div>
+                    <div class="fileTab inactiveTab">File</div>
+                </div>
+                <div class="bgColour">
+                    <div class="bgColourOption" style="background: #C0392B"></div>
+                    <div class="bgColourOption" style="background: #E74C3C"></div>
+                    <div class="bgColourOption" style="background: #9B59B6"></div>
+                    <div class="bgColourOption" style="background: #8E44AD"></div>
+                    <div class="bgColourOption" style="background: #2980B9"></div>
+                    <div class="bgColourOption" style="background: #3498DB"></div>
+                    <div class="bgColourOption" style="background: #1ABC9C"></div>
+                    <div class="bgColourOption" style="background: #16A085"></div>
+                    <div class="bgColourOption" style="background: #27AE60"></div>
+                    <div class="bgColourOption" style="background: #2ECC71"></div>
+                    <div class="bgColourOption" style="background: #F1C40F"></div>
+                    <div class="bgColourOption" style="background: #F39C12"></div>
+                    <div class="bgColourOption" style="background: #E67E22"></div>
+                    <div class="bgColourOption" style="background: #D35400"></div>
+                    <div class="bgColourOption" style="background: #ECF0F1"></div>
+                    <div class="bgColourOption" style="background: #BDC3C7"></div>
+                    <div class="bgColourOption" style="background: #95A5A6"></div>
+                    <div class="bgColourOption" style="background: #7F8C8D"></div>
+                    <div class="bgColourOption" style="background: #34495E"></div>
+                    <div class="bgColourOption" style="background: #2C3E50"></div>
+                    <div class="bgColourOption" style="background: #000"></div>
+                </div>
+                <div class="bgImage" style="display: none">
+                    <div class="bgImageOption" style="background: url(images/1.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/2.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/3.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/4.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/5.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/6.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/7.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/8.jpg); background-size: cover"></div>
+                    <div class="bgImageOption" style="background: url(images/9.jpg); background-size: cover"></div>
+                </div>
+                <div class="file" style="display: none">
+                    <input type="file" class="input">
+                    <div class="inputField">Choose file...</div>
+                    <div class="button">Browse</div>
+                </div>
+            </div>
+            <div class="fas fa-lock buttonBackground" id="signinField"></div>
+            <div class="signin">
+                <div class="signinHeader">Sign in</div>
+                <input type="text" class="login" placeholder="Login...">
+                <input type="text" class="pass" placeholder="Password...">
+                <input type="button" value="Sign in" class="loginButton"> </div>
+        </div>
+        <div class="editTools">
+            <div class="fas fa-save buttonBackground roundedLeft block" id="save"></div>
+            <div class="fas fa-table buttonBackground block" id="table"></div>
+            <div class="createTable">
+                <div class="half">
+                    <div class="optionsLine">
+                        <p class="parameterName">TR:</p>
+                        <input type="text" name="tblparam" placeholder="TR number" class="inputBig"> </div>
+                    <div class="optionsLine">
+                        <p class="parameterName">TD width:</p>
+                        <input type="text" name="tblparam" placeholder="TD width" class="inputBig"> </div>
+                    <div class="optionsLine">
+                        <p class="parameterName">Border width:</p>
+                        <input type="text" name="tblparam" placeholder="Border width" class="inputBig"> </div>
+                    <input type="button" value="Reset" class="resetTable buttonBig"> </div>
+                <div class="half">
+                    <div class="optionsLine">
+                        <p class="parameterName">TD:</p>
+                        <input type="text" name="tblparam" placeholder="TD number" class="inputBig"> </div>
+                    <div class="optionsLine">
+                        <p class="parameterName">TD height:</p>
+                        <input type="text" name="tblparam" placeholder="TD height" class="inputBig"> </div>
+                    <div class="paramNameLine">
+                        <p class="parameterName">Border type:</p>
+                        <p class="parameterName">Border colour:</p>
+                    </div>
+                    <div class="valuesLine">
+                        <select name="brdType" id="" class="inputSmall">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="double">double</option>
+                        </select>
+                        <input type="text" name="tblparam" placeholder="Border colour" class="inputSmaller"> </div>
+                    <input type="button" value="Create table" class="createTableBtn buttonBig"> </div>
+            </div>
+            <div class="hidden"></div>
+            <div class="fas fa-list-ol buttonBackground block" id="ol"></div>
+            <div class="newlist olList">
+                <p class="parameterName">Number of li's</p>
+                <input type="text" name="olNumber" class="inputBig listInp" placeholder="Number of li's">
+                <p class="parameterName">Type of mark</p>
+                <select name="olType" class="inputBig listInp">
+                    <option value="decimal">1</option>
+                    <option value="upper-alpha">A</option>
+                    <option value="lower-alpha">a</option>
+                    <option value="upper-roman">I</option>
+                    <option value="lower-roman">i</option>
+                </select>
+                <div class="listButtons">
+                    <input type="button" value="Reset" class="resetlistOl buttonOl">
+                    <input type="button" value="Create list" class="createListOl buttonOl"> </div>
+            </div>
+            <div class="fas fa-list-ul buttonBackground roundedRight" id="ul"></div>
+            <div class="newlist ulList">
+                <p class="parameterName">Number of li's</p>
+                <input type="text" name="ulNumber" class="inputBig listInp" placeholder="Number of li's">
+                <p class="parameterName">Type of mark</p>
+                <select name="ulType" class="inputBig listInp">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+                <div class="listButtons">
+                    <input type="button" value="Reset" class="resetlistUl buttonOl">
+                    <input type="button" value="Create list" class="createListUl buttonOl"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="txtArea">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur atque, mollitia accusantium inventore quas iure.</p>
+    </div>
+    <textarea class="txtAreaEdit"></textarea>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.base {
+    width: 164px;
+    height: 0;
+    background: #013701;
+    z-index: 40;
+    position: absolute;
+    top: 61px;
+    left: 118px;
+}
+
+.base1 {
+    width: 164px;
+    height: 291px;
+    background: #000;
+    z-index: 10;
+    position: absolute;
+    top: 61px;
+    left: 118px;
+}
+
+.progressBar {
+    width: 164px;
+    height: 291px;
+    background: #1dc01d;
+    z-index: 20;
+    position: absolute;
+    top: 61px;
+    left: 118px;
+}
+
+.time {
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    width: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 60;
+}
+
+.amount {
+    font-size: 60pt;
+}
+
+.unit {
+    font-size: 18pt;
+}

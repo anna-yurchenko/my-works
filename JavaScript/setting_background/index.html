@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 16pt;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .container {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            top: 80px;
+            left: 300px;
+            display: none;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border: 1px solid gray;
+        }
+        
+        .segment {
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Colour</p>
+    <div class="container">
+        <div class="segment" style="background: yellow"></div>
+        <div class="segment" style="background: beige"></div>
+        <div class="segment" style="background: black"></div>
+        <div class="segment" style="background: aqua"></div>
+        <div class="segment" style="background: blueviolet"></div>
+        <div class="segment" style="background: forestgreen"></div>
+        <div class="segment" style="background: dodgerblue"></div>
+        <div class="segment" style="background: deeppink"></div>
+        <div class="segment" style="background: darkred"></div>
+    </div>
+    <p>Image</p>
+    <div class="container">
+        <div class="segment" style="background: url(images/galaxy_wallpaper_1da.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/1.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/2.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/3.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/4.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/5.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/6.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/7.jpg) no-repeat; background-size: cover"></div>
+        <div class="segment" style="background: url(images/space_ocean.jpg) no-repeat; background-size: cover"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

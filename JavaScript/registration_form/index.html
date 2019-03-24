@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body> <span class="startForm">
+        <div class="header">
+            <p>Sign in</p>
+        </div>
+        <form name="user" class="container">
+            <p>First name</p>
+            <input type="text" name="fName" placeholder="type here..." class="inpTxt">
+            <p>Last name</p>
+            <input type="text" name="lName" placeholder="type here..." class="inpTxt">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="type here..." class="inpTxt">
+            <div>
+                <input type="radio" name="sex" checked class="radioB"><label for="">male</label>
+                <input type="radio" name="sex" class="radioB"><label for="">female</label>
+            </div>
+            <p>Position</p>
+            <select name="position" id="">
+                <option>Your position...</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="qcqa">QC/QA</option>
+            </select>
+            <div><input type="checkbox" name="check" class="checkB"><label for="">I agree to the Terms of use</label></div>
+        </form>
+        <form name="nextBtn" class="btnBgr">
+            <input type="button" name="signIn" value="Sign in" class="button" disabled>
+        </form>
+    </span> <span class="endForm">
+        <div class="headerCompl"></div>
+        <form name="result" class="container smallerCont">
+            <div class="image"></div>
+            <p class="name"></p>
+            <p class="inf"></p>
+            <p class="inf"></p>
+            <hr>
+            <input type="button" name="goBack" value="Go back" class="buttonSmall">
+        </form>
+        <div class="footer">
+            <div class="sprite im1"></div>
+            <div class="sprite im2"></div>
+            <div class="sprite im3"></div>
+        </div>
+    </span>
+    <script src="script.js"></script>
+</body>
+
+</html>

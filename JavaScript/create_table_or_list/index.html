@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="container additional">
+        <h1>Choose an option:</h1>
+        <input type="radio" name="optn" value="table"><span class="parameterName label">Table</span>
+        <input type="radio" name="optn" value="list"><span class="parameterName label">List</span>
+        <div class="tbl">
+            <div class="optionsLine">
+                <p class="parameterName">TR:</p>
+                <input type="text" name="tblparam" placeholder="TR number" class="input"> </div>
+            <div class="optionsLine">
+                <p class="parameterName">TD:</p>
+                <input type="text" name="tblparam" placeholder="TD number" class="input"> </div>
+            <h2>Table style:</h2>
+            <div class="optionsLine">
+                <p class="parameterName">TD width:</p>
+                <input type="text" name="tblparam" placeholder="TD width" class="input"> </div>
+            <div class="optionsLine">
+                <p class="parameterName">TD height:</p>
+                <input type="text" name="tblparam" placeholder="TD height" class="input"> </div>
+            <div class="optionsLine">
+                <p class="parameterName">Border width:</p>
+                <input type="text" name="tblparam" placeholder="Border width" class="inputSmall">
+                <p class="parameterName">Border type:</p>
+                <select name="brdType" id="" class="inputSmall">
+                    <option value="solid">solid</option>
+                    <option value="dotted">dotted</option>
+                    <option value="dashed">dashed</option>
+                    <option value="double">double</option>
+                </select>
+                <p class="parameterName">Border colour:</p>
+                <select name="brdCol" id="" class="inputSmall">
+                    <option value="black">black</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                </select>
+            </div>
+            <input type="button" value="Create table" class="createTable"> </div>
+        <div class="list">
+            <div class="optionsLine">
+                <p class="parameterName">Li number:</p>
+                <input type="text" name="listparam" placeholder="Li number" class="input"> </div>
+            <div class="optionsLine">
+                <p class="parameterName">Marker type:</p>
+                <select name="listparam" id="" class="input">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+            </div>
+            <input type="button" value="Create list" class="createList"> </div>
+    </div>
+    <div class="btns">
+        <input type="button" class="edit button" value="Edit">
+        <input type="button" class="style button" value="Style"> </div>
+    <div class="container containerEdit">
+        <div class="content">
+            <textarea name="" id="" cols="30" rows="10" class="txtArea"></textarea>
+            <div class="btns">
+                <input type="button" class="add button" value="Add">
+                <input type="button" class="save button" value="Save"> </div>
+        </div>
+        <div class="stylePanel">
+            <p class="parameterName">Font size:</p>
+            <input type="radio" name="fsize" value="12px"><span>12px</span>
+            <input type="radio" name="fsize" value="14px" checked><span>14px</span>
+            <input type="radio" name="fsize" value="16px"><span>16px</span>
+            <input type="radio" name="fsize" value="18px"><span>18px</span>
+            <input type="radio" name="fsize" value="20px"><span>20px</span>
+            <p class="parameterName">Font family:</p>
+            <select name="ffamily" id="fontFam">
+                <option value="serif">Serif</option>
+                <option value="cursive">Cursive</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="monospace">Monospace</option>
+                <option value="sans-serif">Sans-serif</option>
+            </select>
+            <p class="parameterName">Colours</p>
+            <input type="button" name="txtcol" value="Text colour" class="buttonStyle">
+            <div class="colours">
+                <div class="colopt" style="background: red"></div>
+                <div class="colopt" style="background: blue"></div>
+                <div class="colopt" style="background: green"></div>
+                <div class="colopt" style="background: black"></div>
+                <div class="colopt" style="background: yellow"></div>
+                <div class="colopt" style="background: pink"></div>
+                <div class="colopt" style="background: white"></div>
+                <div class="colopt" style="background: purple"></div>
+                <div class="colopt" style="background: turquoise"></div>
+            </div>
+            <input type="button" name="bgcol" value="Background colour" class="buttonStyle">
+            <p class="parameterName">Text style</p>
+            <input type="checkbox" name="checkStyle" value="bold"><span class="label">Bold</span>
+            <input type="checkbox" name="checkStyle" value="italic"><span class="label">Italic</span> </div>
+    </div>
+    <div class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
