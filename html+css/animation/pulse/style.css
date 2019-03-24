@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1c1c1c;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow:  0 0 0 0 rgba(255, 0, 0, 0.4);
+    margin: 10% auto;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes pulse {
+    0%{
+        box-shadow:  0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70%{
+        box-shadow:  0 0 0 30px rgba(255, 0, 0, 0);
+    }
+    100%{
+        box-shadow:  0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+.circle:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}

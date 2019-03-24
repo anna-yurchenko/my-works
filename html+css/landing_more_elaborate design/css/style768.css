@@ -1,0 +1,84 @@
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 10pt;
+    }
+    .container {
+        width: 768px;
+    }
+    .logo {
+        line-height: 0;
+    }
+    .headerTop {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 70px;
+        width: 768px;
+        height: 160px;
+    }
+    .menu {
+        width: 100%;
+        font-size: 20pt;
+        justify-content: flex-start;
+    }
+    .menuItem {
+        margin-right: 7%;
+    }
+    .accentBackground {
+        margin-top: 5vw;
+    }
+    .sliderHeader {
+        font-size: 40pt;
+    }
+    .sliderSubTitle {
+        font-size: 20pt;
+    }
+    .sliderText {
+        width: 60%;
+        margin-right: 7%;
+    }
+    .aboutTitleIcon1,
+    .aboutTitleIcon2,
+    .aboutTitleIcon3 {
+        font-size: 20pt;
+    }
+    .content {
+        width: 25%;
+    }
+    .quoteTitle {
+        font-size: 24pt;
+        display: flex;
+        flex-direction: column;
+    }
+    .quote {
+        padding: 12%;
+    }
+    .updates {
+        width: 83%;
+        margin-left: 17%;
+    }
+    .i1 {
+        top: 48px;
+    }
+    .i2 {
+        top: 115px;
+    }
+    .i3 {
+        background-position: 0 50px;
+        top: 180px;
+    }
+    .logoMonochrome {
+        font-size: 30pt;
+        margin-bottom: 10%;
+        margin-top: 9%;
+    }
+    .footerMenu {
+        font-size: 14pt;
+    }
+    .designedBy {
+        left: 75%;
+        top: 65%;
+    }
+    .footer {
+        height: 13vw;
+    }
+}

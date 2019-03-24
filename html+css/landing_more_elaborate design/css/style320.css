@@ -1,0 +1,72 @@
+@media screen and (max-width: 520px) {
+    .container {
+        width: 320px;
+    }
+    .headerTop {
+        width: 320px;
+        height: 140px;
+    }
+    .image {
+        display: none;
+    }
+    .miniMenu a {
+        font-size: 16pt;
+    }
+    .sliderHeader {
+        font-size: 22pt;
+    }
+    .sliderSubTitle {
+        font-size: 10pt;
+    }
+    .sliderText {
+        width: 100%;
+        margin-right: 0;
+        align-items: center;
+    }
+    .accentBackground {
+        height: 15vw;
+        background-color: transparent;
+        margin-top: 4vw;
+    }
+    .aboutTitleIcon1,
+    .aboutTitleIcon2,
+    .aboutTitleIcon3 {
+        font-size: 16pt;
+    }
+    .aboutTitleIcon2::before {
+        background-position: -222px -27px;
+    }
+    .aboutTitleIcon3::before {
+        background-position: -160px -61px;
+    }
+    .quote {
+        padding-left: 12%;
+    }
+    .portrait {
+        top: 25px;
+    }
+    .updateTitle {
+        font-size: 12pt;
+    }
+    .updates {
+        width: 85%;
+        margin-left: 15%;
+    }
+    .mainBottom {
+        display: none;
+    }
+    .hideMiniature {
+        display: none;
+    }
+    .footerMenu {
+        justify-content: center;
+        position: static;
+        padding-top: 5%;
+    }
+    .designedBy {
+        position: static;
+    }
+    .footer {
+        height: 20vw;
+    }
+}

@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #3a3a3a;
+}
+.static {
+    position: absolute;
+    background-color: transparent;
+    border: 5px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 392px;
+    left: 578px;
+    z-index: 5;
+}
+.s1 {
+    top: 380px;
+    left: 586px;
+}
+.s2 {
+    top: 392px;
+    left: 595px;
+}
+.top {
+    position: absolute;
+    background-color: hotpink;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 350px;
+    left: 550px;
+    animation-name: topcircle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+@keyframes topcircle {
+    12.5% {
+        top: 350px;
+        left: 550px;
+    }
+    25% {
+        top: 351px;
+        left: 551px;
+    }
+    37.5% {
+        top: 352px;
+        left: 552px;
+    }
+    50% {
+        top: 353px;
+        left: 551px;
+    }
+    62.5% {
+        top: 354px;
+        left: 549px;
+    }
+    75% {
+        top: 353px;
+        left: 548px;
+    }
+    87.5% {
+        top: 352px;
+        left: 549px;
+    }
+    100% {
+        top: 351px;
+        left: 550px;
+    }
+}
+.middle {
+    position: absolute;
+    background-color: lawngreen;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 350px;
+    left: 550px;
+    animation-name: middlecircle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+@keyframes middlecircle {
+    12.5% {
+        top: 350px;
+        left: 550px;
+    }
+    25% {
+        top: 349px;
+        left: 549px;
+    }
+    37.5% {
+        top: 349px;
+        left: 548px;
+    }
+    50% {
+        top: 347px;
+        left: 546px;
+    }
+    62.5% {
+        top: 348px;
+        left: 549px;
+    }
+    75% {
+        top: 350px;
+        left: 550px;
+    }
+    87.5% {
+        top: 352px;
+        left: 553px;
+    }
+    100% {
+        top: 351px;
+        left: 551px;
+    }
+}
+.bottom {
+    position: absolute;
+    background-color: deepskyblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 350px;
+    left: 550px;
+    animation-name: bottomcircle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+@keyframes bottomcircle {
+    12.5% {
+        top: 351px;
+        left: 551px;
+    }
+    25% {
+        top: 352px;
+        left: 552px;
+    }
+    37.5% {
+        top: 353px;
+        left: 554px;
+    }
+    50% {
+        top: 351px;
+        left: 551px;
+    }
+    62.5% {
+        top: 349px;
+        left: 548px;
+    }
+    75% {
+        top: 346px;
+        left: 547px;
+    }
+    87.5% {
+        top: 348px;
+        left: 549px;
+    }
+    100% {
+        top: 350px;
+        left: 550px;
+    }
+}

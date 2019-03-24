@@ -1,0 +1,216 @@
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 8pt;
+    }
+    .container {
+        width: 440px;
+    }
+    .logo {
+        font-size: 38pt;
+        display: block;
+    }
+    .headerTop {
+        flex-direction: column;
+        align-items: center;
+        width: 480px;
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+    .miniMenu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20pt;
+    }
+    .miniMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        border: 2px solid transparent;
+        position: absolute;
+        z-index: 2000;
+        margin-top: 7%;
+    }
+    .dropdown {
+        width: 30vw;
+        height: 40px;
+        text-align: center;
+        border-bottom: 2px groove transparent;
+        margin-top: 2%;
+    }
+    .dropdownHidden {
+        display: none;
+        text-align: center;
+        border-bottom: 2px groove #c187be;
+        margin-top: 2%;
+    }
+    .noBorder {
+        border-bottom: none;
+    }
+    .miniMenu:hover .dropdown {
+        border-bottom: 2px groove #c187be;
+    }
+    .miniMenu:hover .dropdownHidden {
+        display: inline;
+        width: 30vw;
+        height: 40px;
+    }
+    .miniMenu:hover {
+        background-color: rgba(54, 41, 62, 0.7);
+        border-radius: 15px;
+        border: 1px solid #33253a;
+    }
+    .dropdown:hover,
+    .dropdownHidden:hover {
+        background-color: rgba(54, 41, 62, 0.9);
+    }
+    .dropdown:hover {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .noBorder {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .hidden {
+        display: none;
+    }
+    .sliderDescr {
+        display: none;
+    }
+    .sliderHeader {
+        font-size: 30pt;
+    }
+    .sliderSubTitle {
+        font-size: 15pt;
+    }
+    .sliderText {
+        margin-right: 4%;
+    }
+    .slider {
+        justify-content: center;
+    }
+    .accentBackground {
+        height: 20vw;
+        margin-top: 6vw;
+    }
+    .image {
+        height: 20vw;
+        width: 13vw;
+    }
+    .aboutPosit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .aboutTitleIcon1,
+    .aboutTitleIcon2,
+    .aboutTitleIcon3 {
+        font-size: 20pt;
+    }
+    .aboutTitleIcon1::before,
+    .aboutTitleIcon2::before,
+    .aboutTitleIcon3::before {
+        margin-right: 20px;
+    }
+    .aboutTxt {
+        margin-left: 50px;
+    }
+    .readMore {
+        font-size: 12pt;
+        width: 60px;
+        margin-left: 85%;
+    }
+    .readMore:hover {
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    .main {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainElement {
+        width: 85%;
+        margin-bottom: 10%;
+    }
+    .quoteTitle {
+        font-size: 18pt;
+        display: inline;
+    }
+    .quote {
+        padding: 8%;
+    }
+    .portrait {
+        background-position: -15px 0;
+        width: 50px;
+        height: 50px;
+        left: -27px;
+    }
+    .icons {
+        width: 35px;
+        height: 35px;
+    }
+    .i1 {
+        top: 40px;
+    }
+    .i2 {
+        top: 85px;
+    }
+    .i3 {
+        background-position: 0 50px;
+        top: 130px;
+    }
+    .updates {
+        width: 87%;
+        margin-left: 13%;
+    }
+    .moreHere {
+        margin-left: 65%;
+    }
+    .moreHere:hover {
+        text-shadow: none;
+    }
+    .partnLogos {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .partn1,
+    .partn2,
+    .partn3,
+    .partn4,
+    .partn5,
+    .partn6 {
+        margin: 2% 7%;
+    }
+    .bottomPosit {
+        flex-wrap: wrap;
+    }
+    .bottomElement {
+        width: 90%;
+        margin: 2% 0;
+    }
+    .logoMonochrome {
+        font-size: 26pt;
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+    .footerMenu {
+        font-size: 10pt;
+        justify-content: space-around;
+    }
+    .designedBy {
+        font-size: 10pt;
+        left: 40%;
+        top: 80%;
+    }
+    .footer {
+        height: 15vw;
+    }
+}
